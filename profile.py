@@ -63,22 +63,8 @@ pc = portal.Context()
 # Profile parameters.
 #
 
-pc.defineParameter("computeNodeCount", "Number of slave/compute nodes",
+pc.defineParameter("computeNodeCount", "RAN Machines",
                    portal.ParameterType.INTEGER, 1)
-pc.defineParameter("EPC", "EPC implementation",
-                   portal.ParameterType.STRING,"OAI",[("OAI","Open Air Inrterface"),("srsLTE","srsLTE"), ("MobileStream", "MobileStream"), ("NextEPC", "NextEPC"), ("free5GC", "free5GC"), ("Open5GS", "Open5GS")])
-pc.defineParameter("Hardware", "EPC hardware",
-                   portal.ParameterType.STRING,"d430",[("d430","d430"),("d710","d710"), ("d820", "d820"), ("pc3000", "pc3000")])
-pc.defineParameter("multi", "Multiplexer (True or False)",
-                   portal.ParameterType.BOOLEAN, True)
-pc.defineParameter("cores", "Number of cores",
-                   portal.ParameterType.STRING,"4",[("4","4"),("8","8"), ("12", "12"), ("16", "16"), ("20", "20")],
-                   longDescription="Number of cores of each Nervion node.",
-                   advanced=True)
-pc.defineParameter("ram", "RAM size",
-                   portal.ParameterType.STRING,"4",[("4","4"),("8","8"), ("12", "12"), ("16", "16"), ("20", "20"), ("24", "24"), ("32", "32")],
-                   longDescription="RAM size (GB)",
-                   advanced=True)
 
 
 params = pc.bindParameters()
