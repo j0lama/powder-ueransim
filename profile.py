@@ -102,7 +102,7 @@ epclink.addInterface(iface)
 for i in range(0,params.computeNodeCount):
     kube_s = rspec.XenVM('ran'+str(i))
     kube_s.cores = 12
-    kube_s.ram = 1024 * 8
+    kube_s.ram = 1024 * 4
     kube_s.routable_control_ip = True
     kube_s.disk_image = 'urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU18-64-STD'
     kube_s.Site('RAN')
