@@ -82,7 +82,6 @@ epc.ram = 1024*16;
 epc.routable_control_ip = True;
 epc.disk_image = 'urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU18-64-STD'
 epc.addService(PG.Execute(shell="sh", command="/usr/bin/sudo /local/repository/scripts/open5gs.sh"))
-epc.hardware_type = "d840"
 epc.Site('EPC')
     
 
